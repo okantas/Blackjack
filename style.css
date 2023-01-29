@@ -1,0 +1,54 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    
+    
+}
+body{
+   background-image: url("board.jpeg");
+   background-size: cover;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+   font-weight: bold;
+}
+
+.container{
+    text-align: center;
+    padding-top: 15%;
+}
+.container div{
+    background-color: aliceblue;    
+}
+
+h1{
+    color: goldenrod;
+}
+h3{
+    padding: 20px 0 40px 0;
+    color: cornsilk;
+    font-style: italic;
+}
+p{
+    padding-top: 10px;
+    color:white
+    
+}
+button{
+    color: #016f32;
+    width: 150px;
+    background-color: goldenrod;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    cursor:pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    transition-duration: 0.5s;
+
+}
+button:hover{
+    color:#04a74d;
+    background-color: gold;
+    
+}
