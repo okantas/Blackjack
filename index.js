@@ -1,5 +1,8 @@
 
-
+let player= {
+    name: "Okan",
+    chips: 235
+}
 
 let cards=[]
 let sum=0
@@ -10,6 +13,11 @@ let isAlive=false
 let messageEl= document.getElementById("message_el")
 let sumEl=document.getElementById("sum_el")
 let cardsEl=document.getElementById("cards_el")
+
+let playerEl=document.getElementById("player_el")
+
+playerEl.textContent=player.name+ ": $"+ player.chips
+
 
 
 function startGame(){
@@ -57,13 +65,17 @@ function renderGame(){
 
 
 function newCard(){
-    console.log("Drawing a new card from the deck!")
+    if (isAlive===true && hasBlackjack===false){
+        console.log("Drawing a new card from the deck!")
 
-    let card=getRandomCard()
-    sum+=card
+        let card=getRandomCard()
+        sum+=card
+    
+        cards.push(card) 
+        renderGame();
+    }
+    
 
-    cards.push(card)
-
-    renderGame();
+   
 
 }
